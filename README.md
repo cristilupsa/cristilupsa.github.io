@@ -1,1 +1,3 @@
-# cristilupsa.github.io
+# cristilupsa.github.io 
+
+# Aplicatii mobile dezvoltate de Cristi Lupsa
