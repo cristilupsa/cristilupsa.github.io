@@ -2,4 +2,4 @@
 
 # Aplicatii mobile dezvoltate de Cristi Lupsa
 
-# Un com
+# Un co
