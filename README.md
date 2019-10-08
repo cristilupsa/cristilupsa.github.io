@@ -2,4 +2,4 @@
 
 # Aplicatii mobile dezvoltate de Cristi Lupsa
 
-# Teste de comm
+# Teste de com
