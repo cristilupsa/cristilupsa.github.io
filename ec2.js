@@ -1,3 +1,5 @@
+document.getElementById("id_logic_version").innerHTML="Logic Version = 2019.10.14.0";
+
 function solve_eq2()
 {
 	var a = document.getElementById("id_a").value;
@@ -23,5 +25,5 @@ function solve_eq2()
 	}
 	// Afisare
 	document.getElementById("id_x1").innerHTML="x1= "+x1_re + "+" + x1_im + "i";
-	document.getElementById("id_x1").innerHTML="x2= "+x2_re + "+" + x2_im + "i";
+	document.getElementById("id_x2").innerHTML="x2= "+x2_re + "+" + x2_im + "i";
 }
