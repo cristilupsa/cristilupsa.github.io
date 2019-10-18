@@ -23,16 +23,16 @@ function compute_solutions(coef)
 	
 	if (delta>=0)
 	{
-		x1_re=(-coef.b-Math.sqrt(delta))/(2*coef[0]);
-		x2_re=(-coef.b+Math.sqrt(delta))/(2*coef[0]);
+		x1_re=(-coef[1]-Math.sqrt(delta))/(2*coef[0]);
+		x2_re=(-coef[1]+Math.sqrt(delta))/(2*coef[0]);
 		x1_im=0;
 		x2_im=0;
 		
 	}
 	else
 	{
-		x1_re=(-coef.b)/(2*coef[0]);
-		x2_re=(-coef.b)/(2*coef[0]);
+		x1_re=(-coef[1])/(2*coef[0]);
+		x2_re=(-coef[1])/(2*coef[0]);
 		x1_im=-Math.sqrt(-delta)/(2*coef[0]);
 		x2_im=+Math.sqrt(-delta)/(2*coef[0]);
 	}
@@ -41,9 +41,10 @@ function compute_solutions(coef)
 	solutions.push(x1_im);
 	solutions.push(x2_re);
 	solutions.push(x2_im);
+	return solutions;
 }
 
-function print_solutions()
+function print_solutions(solutions)
 {
 	document.getElementById("id_x1").innerHTML="x1= "+solutions[0] + "+" + solutions[1] + "i";
 	document.getElementById("id_x2").innerHTML="x2= "+solutions[2] + "+" + solutions[3] + "i";
@@ -52,6 +53,6 @@ function print_solutions()
 function solve_eq2()
 {
 	var coef = read_coefficients();
-	var solutions = compute_solutions();
-	print_solutions();
+	var solutions = compute_solutions(coef);
+	print_solutions(solutions);
 }

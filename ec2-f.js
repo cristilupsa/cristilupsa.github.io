@@ -41,9 +41,10 @@ function compute_solutions(coef)
 	solutions.x1_im = x1_im;
 	solutions.x2_re = x2_re;
 	solutions.x2_im = x2_im;
+	return solutions;
 }
 
-function print_solutions()
+function print_solutions(solutions)
 {
 	document.getElementById("id_x1").innerHTML="x1= "+solutions.x1_re + "+" + solutions.x1_im + "i";
 	document.getElementById("id_x2").innerHTML="x2= "+solutions.x2_re + "+" + solutions.x2_im + "i";
@@ -52,6 +53,6 @@ function print_solutions()
 function solve_eq2()
 {
 	var coef = read_coefficients();
-	var solutions = compute_solutions();
-	print_solutions();
+	var solutions = compute_solutions(coef);
+	print_solutions(solutions);
 }
