@@ -4,7 +4,7 @@ window.addEventListener("deviceorientation", on_gyro_data_uab);
 
 function on_gyro_data_uab(e)
 {
-	document.getElementById("id_alpha").innerHTML = e.alpha;
+	document.getElementById("id_alpha").innerHTML = Math.round(e.alpha);
 	document.getElementById("id_beta").innerHTML = e.beta;
 	document.getElementById("id_gamma").innerHTML = e.gamma;
 }
