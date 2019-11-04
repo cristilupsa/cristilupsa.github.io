@@ -1,4 +1,4 @@
-document.getElementsByClassId('id_logic_version').innerHTML="Logic = 2019.11.4.0";
+document.getElementsById('id_logic_version').innerHTML="Logic = 2019.11.4.0";
 
 window.addEventListener("deviceorientation", on_gyro_data_uab);
 
