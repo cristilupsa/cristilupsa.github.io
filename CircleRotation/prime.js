@@ -6,7 +6,7 @@ onmessage = function(e) {
 		ruleaza = true;
 	}
 	else 
-		if (e.data == "stop" {
+		if (e.data == "stop"){
 		ruleaza = false;
 	}
 }
@@ -28,7 +28,8 @@ function start(start_value)
 		for(var i=start_value; i<start_value+100; i++)
 			if (este_prim(i))
 				postMessage(i);
-				postMessage +=100;
+				start_value +=100;
+				
 	}
 	if (start_value < 1E11)
 		setTimeout(start, 0, start_value);
