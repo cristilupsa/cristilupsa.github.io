@@ -1,5 +1,5 @@
 (function(){
-  navigator,getMedia = (navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia);
+  navigator.getMedia = (navigator.getUserMedia||navigator.webkitGetUserMedia||navigator.mozGetUserMedia||navigator.msGetUserMedia||navigator.oGetUserMedia);
 
   navigator.getMedia(
     //constraints
