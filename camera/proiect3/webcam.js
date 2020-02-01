@@ -16,7 +16,7 @@
     }
 
     document.getElementById("capture").addEventListener("click", takeSnapshot);
-})();
+});
 
 function takeSnapshot(){
     var canvas = document.getElementById("canvas");
