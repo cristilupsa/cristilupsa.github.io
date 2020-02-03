@@ -1,4 +1,4 @@
-Nume proiect:Aplicatie mobila web - The Gallery
+Nume proiect: Aplicatie mobila web - The Gallery
 <br/>
 Autor: Lupsa Cristian
 <br/>
